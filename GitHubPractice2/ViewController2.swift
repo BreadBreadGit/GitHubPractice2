@@ -13,12 +13,16 @@ class ViewController2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var animal = ""
-    nameLabel.text = "\(animal)"
+        let animal = ""
+        nameLabel.text = animal
+        imageView.image = UIImage(named: animal)
         
-        
+       // override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            
+            
         // Do any additional setup after loading the view.
     }
+    
     
 
     /*
@@ -32,3 +36,4 @@ class ViewController2: UIViewController {
     */
 
 }
+

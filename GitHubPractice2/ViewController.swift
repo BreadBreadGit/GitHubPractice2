@@ -10,11 +10,13 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return animalArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
+        cell.textLabel?.text = "\(animalArray[indexPath.row])"
+        return cell
     }
     
 
